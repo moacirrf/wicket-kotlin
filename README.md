@@ -4,7 +4,7 @@
 	It uses default Wicket Maven Archetype
 </p>
 <p>
-<h5>My first impressions<h5>
+<h5>My first impressions</h5>
 </p>
 Advantages
 <ul>
