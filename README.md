@@ -1,6 +1,6 @@
 # wicket-kotlin
 <p>
-	An Hello World project, build with kotlin.
+	A Hello World project, build with kotlin.
 	It uses default Wicket Maven Archetype
 </p>
 <p>
