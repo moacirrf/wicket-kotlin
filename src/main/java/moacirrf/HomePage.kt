@@ -15,19 +15,25 @@ class HomePage(parameters: PageParameters?) : WebPage(parameters) {
 
     private var mForm: Form<Void>? = null
     private var kotlinBtn: AjaxButton? = null
-    private var version: Label? = null
+    private var wicketVersion: Label? = null
+    private var kotlinVersion: Label? = null
+
 
     init {
         mForm = Form("mForm")
         add(mForm)
-        version = Label("version", getApplication().getFrameworkSettings().getVersion())
-        version!!.outputMarkupId = true
-        add(version)
+        wicketVersion = Label("wicketVersion", getApplication().getFrameworkSettings().getVersion())
+        add(wicketVersion)
+
+        kotlinVersion = Label("kotlinVersion", "Kotlin version is: 1.5.21")
+        kotlinVersion!!.setOutputMarkupId(true)
+        kotlinVersion!!.setVisible(false)
+        mForm!!.add(kotlinVersion)
 
         kotlinBtn = object : AjaxButton("kotlinBtn", Model.of("Show Kotlin Version."), mForm) {
             override fun onSubmit(target: AjaxRequestTarget) {
-                version!!.setDefaultModelObject("Kotlin version is: 1.1.3-2")
-                target.add(version)
+                kotlinVersion!!.setVisible(!kotlinVersion!!.isVisible())
+                target.add(mForm)
             }
         }
         mForm!!.add(kotlinBtn)

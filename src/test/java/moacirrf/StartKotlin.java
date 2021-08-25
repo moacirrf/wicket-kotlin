@@ -20,6 +20,7 @@ package moacirrf;
  */
 public class StartKotlin {
     public static void main(String[] args) {
+        
         new Start().main(args);
     }
 }
