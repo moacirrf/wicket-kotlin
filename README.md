@@ -1,12 +1,12 @@
 # wicket-kotlin
 <p>
-	An Hello World project, build with kotlin.
+	A Hello World project, build with kotlin.
 	It uses default Wicket Maven Archetype
 </p>
 <p>
-	My first impressions:
+<h5>My first impressions</h5>
 </p>
-	Advantages
+Advantages
 <ul>
 	<li>Easy to integrate.</li>
 	<li>Kotlin has beautyfull integration with java.</li>
