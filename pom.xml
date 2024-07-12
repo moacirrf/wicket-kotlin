@@ -47,7 +47,7 @@
         <junit.version>4.13.12</junit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <wtp.version>none</wtp.version>
-        <kotlin.version>1.5.21</kotlin.version>
+        <kotlin.version>1.6.0</kotlin.version>
         <kotlin.compiler.incremental>false</kotlin.compiler.incremental>
     </properties>
     <dependencies>
